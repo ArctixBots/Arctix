@@ -1,0 +1,13 @@
+{
+	"wait": "Analyzing Input Data... 📥 Wait for Output... 📤",
+	"error": {
+		"Iv": "The link you provided is not valid",
+		"api": "Sorry an error occurred"
+	},
+	"OnlyGrup": "This command can only be used in groups",
+	"OnlyPM": "This command can only be used in private messages",
+	"GrupAdmin": "You Are Not An Admin... 😖",
+	"BotAdmin": "Bot Is Not An admin... 😖",
+	"OnlyOwner": "Command meant for *Bot Owner* ⚠️",
+	"OnlyPrem": "Command meant for premium members"
+}
