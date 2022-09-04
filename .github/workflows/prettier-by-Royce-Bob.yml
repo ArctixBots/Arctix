@@ -1,0 +1,22 @@
+# Do not edit anything here you dirty dick
+name: Prettier By Royce Bob
+on:
+  push:
+    branches: [ main ]
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+      - run: npm i -g prettier
+      - run: npm run format
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: automatic tidy up code
+          branch: ${{ github.head_ref }}
