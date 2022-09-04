@@ -1,14 +1,14 @@
 module.exports = {
-	name: "ass",
-	alias: ["ass"],
+	name: "loli",
+	alias: ["randomloli", "lolianime"],
 	category: "random",
 	isSpam: true,
 	async run({ msg, conn }) {
 		await msg.reply(response.wait);
-		const buttons = [{ buttonId: "#ass", buttonText: { displayText: "Get Again" }, type: 1 }];
+		const buttons = [{ buttonId: "#loli", buttonText: { displayText: "Get Again" }, type: 1 }];
 		const buttonMessage = {
-			image: { conn.sendFile(m.chat, 'https://api.xteam.xyz/randomimage/ass?APIKEY=MahliKey },
-			caption: "Ass🫵",
+			image: { url: (await rzky.image.loli()).url },
+			caption: "Pedo🫵",
 			buttons: buttons,
 			headerType: 4,
 		};
