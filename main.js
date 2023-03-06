@@ -28,7 +28,7 @@ const spinnies = new Spinnies({
 });
 const moment = require("moment");
 const { self } = require("./config.json");
-const { state, saveState } = useMultiFileAuthState(__dirname +`/auth_info_baileys/`), log({ level: "silent" }));
+const { state, saveState } = useMultiFileAuthState(__dirname +`/auth_info_baileys/`)//, log({ level: "silent" }));
 attribute.prefix = "#";
 
 // Set country code
