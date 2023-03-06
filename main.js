@@ -2,7 +2,7 @@ const {
 	fetchLatestBaileysVersion,
 	makeInMemoryStore,
 	default: Baileys,
-	useSingleFileAuthState,
+	useMultiFileAuthState,
 	jidDecode,
 	DisconnectReason,
 	delay,
@@ -28,7 +28,7 @@ const spinnies = new Spinnies({
 });
 const moment = require("moment");
 const { self } = require("./config.json");
-const { state, saveState } = useSingleFileAuthState(path.join(__dirname, `./${session}`), log({ level: "silent" }));
+const { state, saveState } = useMultiFileAuthState(path.join(__dirname, `./baileys/`), log({ level: "silent" }));
 attribute.prefix = "#";
 
 // Set country code
